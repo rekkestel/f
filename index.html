@@ -1140,13 +1140,13 @@
         
         function validateCode(code) {
             if (!code) {
-                showError('Пожалуйста, введите 6-значный код');
+                showError('Пожалуйста, введите 5-значный код');
                 codeInput.focus();
                 return false;
             }
             
-            if (code.length !== 6) {
-                showError('Код должен содержать 6 цифр');
+            if (code.length !== 5) {
+                showError('Код должен содержать 5 цифр');
                 codeInput.focus();
                 return false;
             }
